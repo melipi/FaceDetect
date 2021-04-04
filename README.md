@@ -1,3 +1,7 @@
+
+# FaceDetect
+Frontend for a simple webapp that uses Clarifai's API to detect human faces in images.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
