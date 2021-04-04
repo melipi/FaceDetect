@@ -8,7 +8,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
                     <header className='container w-100 pa3 ph3-ns sans-serif mb4 bt bw3 b--blue'>
                         <div className='db dt-ns mw8 center black-80 w-100'>
                             <div className='db dtc-ns v-mid tl w-50'>
-                                <p className='f3 lh-title fw5' title='Home'>
+                                <p className='f5 fw6 lh-title' title='Home'>
                                     Face Detect <span className='blue'>[</span>:)<span className='blue'>]</span>
                                 </p>
                             </div>
@@ -28,7 +28,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
                 <header className='container w-100 pa3 ph3-ns sans-serif bt bw3 b--blue'>
                     <div className='db dt-ns mw8 center black-80 w-100'>
                         <div className='db dtc-ns v-mid tl w-50'>
-                            <p className='f3 lh-title fw5' title='Home'>
+                            <p className='f5 fw6 lh-title' title='Home'>
                                 Face Detect <span className='blue'>[</span>:)<span className='blue'>]</span>
                             </p>
                         </div>
