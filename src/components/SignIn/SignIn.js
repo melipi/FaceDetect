@@ -42,7 +42,7 @@ class SignIn extends React.Component {
         const { onRouteChange } = this.props;
         return (
             <React.Fragment>
-            <form className='flex flex-column flex-wrap h-100 justify-start items-center sans-serif'
+            <form className='flex flex-column flex-wrap h-60 justify-start items-center sans-serif'
                 onSubmit={this.onSubmitSignIn}
                 method='post'>
                  <main className='mt5 black-80'>

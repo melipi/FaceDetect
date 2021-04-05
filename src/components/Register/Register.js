@@ -50,7 +50,7 @@ class Register extends React.Component {
         return(
             <React.Fragment>
                 <form 
-                    className='flex flex-column h-100 justify-start items-center sans-serif mb3' 
+                    className='flex flex-column h-60 justify-start items-center sans-serif mb3' 
                     onSubmit={this.onSubmitSignIn}
                     method='post'>
                      <main className='mt5 black-80'>
