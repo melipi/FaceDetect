@@ -122,17 +122,26 @@ class App extends Component {
           </div>
           : (
             route === 'signin'
-            ? <SignIn 
-                loadUser={this.loadUser} 
-                onRouteChange={this.onRouteChange} />
+            ? <React.Fragment>
+                <SignIn 
+                  loadUser={this.loadUser} 
+                  onRouteChange={this.onRouteChange} />
+                <Footer />
+            </React.Fragment>
             : (
               route === 'signout'
-              ? <SignIn 
-                loadUser={this.loadUser} 
-                onRouteChange={this.onRouteChange} />
-              : <Register 
-                loadUser={this.loadUser} 
-                onRouteChange={this.onRouteChange} />
+              ? <React.Fragment>
+                <SignIn 
+                  loadUser={this.loadUser} 
+                  onRouteChange={this.onRouteChange} />
+                <Footer />
+              </React.Fragment>
+              : <React.Fragment>
+                  <Register 
+                  loadUser={this.loadUser} 
+                  onRouteChange={this.onRouteChange} />
+                  <Footer />
+              </React.Fragment>
             ) 
           )
         }
