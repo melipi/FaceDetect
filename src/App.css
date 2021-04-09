@@ -1,4 +1,6 @@
-html, body {
-    margin: 0px;
-    height: 100%;
+.flex-wrapper {
+    display: flex;
+    min-height: 90vh;
+    flex-direction: column;
+    justify-content: space-between;
 }

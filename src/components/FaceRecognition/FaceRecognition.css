@@ -14,10 +14,6 @@
     flex: 1 0 20% !important;
 }
 
-.imgcontainer {
-    height: 60vh;
-}
-
 img {
     width: auto;
     height: 60vh;

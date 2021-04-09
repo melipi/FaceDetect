@@ -3,7 +3,7 @@ import './FaceRecognition.css';
 
 const FaceRecognition = ({ imageUrl, box }) => {
     return (
-       <div className='container flex flex-column items-center border-box mb3'>
+       <div className='container flex flex-column items-center border-box'>
            <div className='imgcontainer border-box'>
                <div className='imgviewer relative border-box'>
                     <img 
@@ -18,7 +18,6 @@ const FaceRecognition = ({ imageUrl, box }) => {
                             bottom: box.bottomRow, 
                             left: box.leftCol}}>
                     </div>
-
                 </div>
             </div>
         </div>

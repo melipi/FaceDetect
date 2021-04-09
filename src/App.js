@@ -103,12 +103,12 @@ class App extends Component {
   render() {
   const { isSignedIn, imageUrl, route, box } = this.state;
     return (
-      <div className='tc vh-100'>
+      <div className='tc overflow-hidden'>
         <Navigation 
         isSignedIn={isSignedIn} 
         onRouteChange = {this.onRouteChange} />
         { route === 'home' 
-          ? <div>
+          ? <div className='flex-wrapper'>
             <Rank 
             name={this.state.user.name} 
             entries={this.state.user.entries} />
@@ -123,24 +123,30 @@ class App extends Component {
           : (
             route === 'signin'
             ? <React.Fragment>
+              <div className='flex-wrapper'>
                 <SignIn 
-                  loadUser={this.loadUser} 
-                  onRouteChange={this.onRouteChange} />
+                    loadUser={this.loadUser} 
+                    onRouteChange={this.onRouteChange} />
                 <Footer />
+              </div>
             </React.Fragment>
             : (
               route === 'signout'
               ? <React.Fragment>
-                <SignIn 
-                  loadUser={this.loadUser} 
-                  onRouteChange={this.onRouteChange} />
-                <Footer />
+                <div className='flex-wrapper'>
+                  <SignIn 
+                    loadUser={this.loadUser} 
+                    onRouteChange={this.onRouteChange} />
+                  <Footer />
+                </div>
               </React.Fragment>
               : <React.Fragment>
-                  <Register 
-                  loadUser={this.loadUser} 
-                  onRouteChange={this.onRouteChange} />
-                  <Footer />
+                  <div className='flex-wrapper'>
+                    <Register 
+                    loadUser={this.loadUser} 
+                    onRouteChange={this.onRouteChange} />
+                    <Footer />
+                  </div>
               </React.Fragment>
             ) 
           )
