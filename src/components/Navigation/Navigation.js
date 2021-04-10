@@ -8,7 +8,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
                     <header className='container pa3 ph3-ns sans-serif mb3 bt bw3 b--blue'>
                         <div className='db dt-ns mw8 center black-80 w-100'>
                             <div className='db dtc-ns v-mid tl w-50'>
-                                <p className='f4 b tracked-tight' title='Home'>
+                                <p className='f4 b tracked-tight'>
                                     Face Detect <span className='blue'>[</span>:)<span className='blue'>]</span>
                                 </p>
                             </div>
@@ -25,7 +25,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
         } else {
             return(
                 <React.Fragment>
-                <header className='container pa3 ph3-ns sans-serif bt bw3 b--blue'>
+                <header className='container pa3 ph3-ns sans-serif mb3 bt bw3 b--blue'>
                     <div className='db dt-ns mw8 center black-80 w-100'>
                         <div className='db dtc-ns v-mid tl w-50'>
                             <p className='f4 b tracked-tight' title='Home'>

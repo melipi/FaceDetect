@@ -5,7 +5,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
     return (
        <React.Fragment>
        <div className='flex flex-column items-center sans-serif pt3'>
-           <p className='f6 fw9 black-80 lh-solid'>
+           <p className='f6 fw9 black-80'>
                {'Paste an image URL below to see if the app detects a human face!'}
            </p>
            <div className='tc mw-100 flex flex-auto'>

@@ -48,11 +48,11 @@ class SignIn extends React.Component {
                  <main className='mt5 black-80'>
                      <div className='measure'>
                          <fieldset id='sign_up' className='ba b--transparent ph0 mh0'>
-                         <legend className='f3 fw6 ph0 mh0'>Sign In</legend>
+                         <legend className='f4 fw6 ph0 mh0'>Sign In</legend>
                          <div className='mt3'>
-                             <label className='f6 b' htmlFor='email-address'>Email</label>
+                             <label className='f6 b black-70' htmlFor='email-address'>Email</label>
                              <input
-                                className='pa2 input-reset ba bg-transparent hover-bg-light-gray w-100' 
+                                className='f6 pa2 input-reset ba bg-transparent hover-bg-light-gray w-100' 
                                 type='email' 
                                 name='email-address'  
                                 id='email-address' 
@@ -60,9 +60,9 @@ class SignIn extends React.Component {
                              />
                          </div>
                          <div className='mv3'>
-                             <label className='f6 b' htmlFor='password'>Password</label>
+                             <label className='f6 b black-70' htmlFor='password'>Password</label>
                              <input 
-                                className='b pa2 input-reset ba bg-transparent hover-bg-light-gray  w-100' 
+                                className='f6 b pa2 input-reset ba bg-transparent hover-bg-light-gray  w-100' 
                                 type='password' 
                                 name='password'  
                                 id='password' 
@@ -73,7 +73,7 @@ class SignIn extends React.Component {
                          </fieldset>
                          <div className=''>
                          <input 
-                            className='w-30 b ph3 pv2 input-reset ba bw1 b--transparent bg-transparent bg-blue shadow-hover white pointer f5 dib' 
+                            className='b ph3 pv2 input-reset ba bw1 b--transparent bg-transparent bg-blue shadow-hover white pointer f5 dib' 
                             type='submit' 
                             value='Sign in' 
                         />
