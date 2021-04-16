@@ -103,7 +103,7 @@ class App extends Component {
   render() {
   const { isSignedIn, imageUrl, route, box } = this.state;
     return (
-      <div className='tc overflow-hidden'>
+      <div className='tc'>
         <Navigation 
         isSignedIn={isSignedIn} 
         onRouteChange = {this.onRouteChange} />

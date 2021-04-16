@@ -5,16 +5,16 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
         if (isSignedIn) {
             return(
                 <React.Fragment>
-                    <header className='container pa3 ph3-ns sans-serif mb3 bt bw3 b--blue'>
-                        <div className='db dt-ns mw8 center black-80 w-100'>
-                            <div className='db dtc-ns v-mid tl w-50'>
+                    <header className='container pa3 sans-serif mb3 bt bw3 b--blue'>
+                        <div className='flex items-center'>
+                            <div className='flex-auto v-mid tl w-50'>
                                 <p className='f4 b tracked-tight'>
                                     Face Detect <span className='blue'>[</span>:)<span className='blue'>]</span>
                                 </p>
                             </div>
-                            <nav className='db dtc-ns v-mid tl tr-ns black-70'>
+                            <nav className='nav flex-auto v-mid tr black-70 w-50'>
                                 <p  onClick={() => onRouteChange('signout')}
-                                    className='f5 fw6 hover-blue hover-bb pointer dib'>
+                                    className='nav-item f5 fw6 hover-black pointer dib'>
                                     Sign Out
                                 </p>
                             </nav>
@@ -25,20 +25,20 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
         } else {
             return(
                 <React.Fragment>
-                <header className='container pa3 ph3-ns sans-serif mb3 bt bw3 b--blue'>
-                    <div className='db dt-ns mw8 center black-80 w-100'>
-                        <div className='db dtc-ns v-mid tl w-50'>
+                <header className='container pa3 sans-serif mb3 bt bw3 b--blue'>
+                    <div className='flex items-center'>
+                        <div className='flex-auto v-mid tl w-50'>
                             <p className='f4 b tracked-tight' title='Home'>
                                 Face Detect <span className='blue'>[</span>:)<span className='blue'>]</span>
                             </p>
                         </div>
-                        <nav className='db dtc-ns v-mid tl tr-ns black-70'>
+                        <nav className='nav flex-auto v-mid tr black-70 w-50'>
                             <p  onClick={() => onRouteChange('signin')}
-                                className='f5 fw6 hover-blue hover-bb pointer mr2 mr3-m mr4-l dib'>
+                                className='nav-item f5 fw6 hover-black pointer mr2 mr3-m mr4-l dib'>
                                 Sign In
                             </p>
                             <p  onClick={() => onRouteChange('register')}
-                                className='f5 fw6 hover-blue hover-bb pointer dib'>
+                                className='nav-item f5 fw6 hover-black pointer dib'>
                                 Register
                             </p>
                         </nav>
