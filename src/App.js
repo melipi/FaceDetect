@@ -60,8 +60,8 @@ class App extends Component {
     this.setState({input: event.target.value})
   }
 
-  onButtonSubmit = () => { 
-      this.setState({imageUrl: this.state.input})
+  onButtonSubmit = () => {
+    this.setState({imageUrl: this.state.input})
     fetch('https://polar-springs-85501.herokuapp.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
