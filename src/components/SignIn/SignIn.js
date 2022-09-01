@@ -21,7 +21,7 @@ class SignIn extends React.Component {
 
     onSubmitSignIn = (e) => {
         e.preventDefault();
-        fetch('https://polar-springs-85501.herokuapp.com/signin', {
+        fetch('https://melipi-face-detect.herokuapp.com/signin', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
