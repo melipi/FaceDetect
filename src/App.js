@@ -61,7 +61,8 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    this.setState({imageUrl: this.state.input})
+    this.setState({imageUrl: this.state.input});
+    
     fetch('https://melipi-facedetect-api.onrender.com/imageurl', {
       method: 'post',
       headers: {'Content-Type': 'application/json'},
